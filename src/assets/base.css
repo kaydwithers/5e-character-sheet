@@ -1,0 +1,116 @@
+:root {
+  --global-font-size: 10px;
+  --global-line-height: 16px;
+  --global-transition: all 300ms ease-in-out;
+
+  --white: #fff;
+  --grey: #bbb;
+  --grey-light: #eee;
+  --grey-dark: #555;
+  --black: #262626;
+
+  --spacing-tiny: 5px;
+  --spacing-small: 10px;
+  --spacing: 15px;
+  --spacing-large: 20px;
+  --spacing-huge: 30px;
+
+  --font-size-h1: 32px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-h4: 16px;
+  --font-size-h5: 14px;
+  --font-size-h6: 12px;
+
+  --chamfer-size-s: 4px;
+  --chamfer-size-l: 5px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--global-font-size);
+  line-height: var(--global-line-height);
+  color: var(--black);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: var(--spacing-small);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--spacing-huge);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--spacing-huge);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--spacing-huge);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--spacing-huge);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+  line-height: var(--spacing);
+}
+
+h6 {
+  font-size: var(--font-size-h6);
+  line-height: var(--spacing);
+}
+
+small {
+  display: block;
+  font-size: 0.5rem;
+  line-height: 12px;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 10mm auto;
+  border: 1px #d3d3d3 solid;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
